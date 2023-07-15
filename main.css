@@ -1,0 +1,106 @@
+/* Remove como reset dos navegadores */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Cor fundo do header */
+body > header {
+    background-color: rgb(97, 150, 150);
+    padding: 8px 0;
+}
+/* Deixar todo o conteudo dos links do header na mesma linha */
+header li  {
+    display: inline;
+    font-size: 20px;
+}
+/* Alteracao do titulo da pagina */
+header h1{
+    margin-bottom: 8px;
+    font-size: 40px;
+}
+/* Cor dos links */ 
+header li a {
+    color: rgb(46, 24, 24);
+    margin-right: 8px;
+    text-decoration: none;
+}
+/* Deixou um elemento do lado do outro e deixar um espaço entra eles justify */ 
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Efeito do link */
+header .container a:hover {
+    color: azure;
+    font-weight: bold;
+}
+/* Alinha todo o conteudo no layout com largura e margem*/
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+/* Cor fundo artigos e espacamento */
+section {
+    padding: 10px 0;   
+}
+/* Cor fundo artigos esportes */
+#esportes {
+    background-color: rgb(205, 213, 175); 
+}
+/* Cor fundo artigos economia */
+#economia {
+    background-color: rgb(145, 208, 208); 
+}
+/* Cor fundo artigos cultura */
+#cultura {
+    background-color: rgb(150, 136, 227); 
+}
+/* Cor fundo artigos cultura */
+#tecnologia {
+    background-color: rgb(242, 201, 205); 
+}
+/* Limitar o tamanho da imagem e margem bottom */
+.artigos article img {
+    width: 100%;
+}
+/* Alteracao do titulo dos artigos 8*/
+.container h2  {
+    margin: 10px;
+    font-size: 30px;    
+}
+/* Padronizar a margem e tamanho dos artigos */
+.artigos article {
+    margin: 2px auto;
+    width: 30%;
+}
+/* Separar espaçamento dos artigos */
+.artigos article h3, p, a, time  {
+    padding: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* Alterar o link dos artigos, textdeco retira o sublinhado do link */
+.artigos article a {
+    background-color: rgb(4, 13, 6);
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 8px;
+}
+/* Usado para alinhar todo o conteudo lado a lado , cria uma linha a mais quando a largura ultrapassa e
+distribui os espaços entre os articles de forma igual */
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: justify;
+}
+/* Efeito do item artigos */
+.artigos article a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
